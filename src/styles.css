@@ -1,3 +1,7 @@
+:root {
+  main-color: rgb(244, 239, 234);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(244, 239, 234);
@@ -25,10 +29,23 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px;
+}
+
+.section-1 {
+  background: white;
+}
+
+.section-2 {
+  background-color: --var(-main-color);
+  text-align: center;
 }
 
 header {
@@ -70,7 +87,6 @@ header a {
   padding: 16px 32px;
   display: inline-block;
   margin-top: 32px;
-  background: rgb(244, 239, 234);
   text-decoration: none;
   color: black;
   letter-spacing: 3px;
