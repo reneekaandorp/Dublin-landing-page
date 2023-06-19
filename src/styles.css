@@ -8,6 +8,29 @@ body {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.image-responsive {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/library.jpg");
@@ -53,6 +76,38 @@ header a {
   letter-spacing: 3px;
 }
 
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/temple-bar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(244, 239, 234);
+  padding: 0;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-right: 20px;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.8;
+}
+
+footer a {
+  color: rgb(244, 239, 234);
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -68,5 +123,18 @@ header a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  footer h3 {
+    margin: 0;
   }
 }
