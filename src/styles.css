@@ -168,7 +168,7 @@ footer a {
   color: rgb(244, 239, 234);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   header {
     padding: 60px 0;
   }
